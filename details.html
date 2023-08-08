@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Details</title>
+</head>
+<body>
+    <h1 id="postTitle"></h1>
+    <p id="postBody"></p>
+
+    <script>
+       function getPostDetails() {
+            const search = window.location.search.substring(1);
+            const params = new URLSearchParams(search);
+            const postDetails = {};
+            for (const [key, value] of params) {
+                postDetails[key] = value;
+            }
+            return postDetails;
+        }
+
+        window.onload = function () {
+            const postDetails = getPostDetails();
+            document.getElementById('postTitle').innerText = postDetails.title || 'No Title';
+            document.getElementById('postBody').innerText = postDetails.body || 'No Body';
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+
+body {
+    background-color: #141b2e; /*#1a70d5*/
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.card {
+    background-color: #eb2c4e; /*#f5f4f2*/
+    width: calc(20% - 20px); /* Her satırda 5 kart olacak şekilde 20% genişlik */
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+}
