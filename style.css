@@ -10,10 +10,86 @@ body {
 
 .card {
     background-color: #eb2c4e; /*#f5f4f2*/
-    width: calc(20% - 20px); /* Her satırda 5 kart olacak şekilde 20% genişlik */
+    width: calc(20% - 20px);
     border: none;
     border-radius: 15px;
     padding: 10px;
     margin: 20px;
     text-align: center;
+    color: #fff;
 }
+
+.cardComment {
+
+    background-color: #141b2e; /*#f5f4f2*/
+    width: calc(16% - 16px);
+    border: solid 3px #eb2c4e;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+    color: #fff;
+    transition-duration: 0.4s;
+}
+
+.cardComment:hover {
+    background-color: rgba(235, 44, 78, 0.9);
+}
+
+#postTitle {
+    color: #eb2c4e;
+    font-size: 50px;
+}
+
+#postBody {
+    color: #fff;
+    font-size: 30px;
+}
+
+#postid {
+    display: none;
+}
+
+.btn {
+    transition-duration: 0.5s;
+    background-color: #141b2e;
+    color: #fff;
+    border: 2px solid #141b2e; /* Green */
+    width: auto;
+    height: 50px;
+    border-radius: 20px;
+  }
+
+  .btn:hover {
+    background-color: #eb2c4e; /* Green */
+    color: white;
+    cursor: pointer;
+  }
+
+  span {
+    display: none;
+  }
+
+#commentTitle{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    margin-top: 100px;
+} 
+
+.img {
+    border-radius: 10px;
+    transition-duration: 0.4s;
+}
+
+.img:hover {
+    transform: scale(1.1);
+}
+
+#postEmail {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
